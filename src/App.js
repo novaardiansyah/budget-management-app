@@ -3,6 +3,7 @@ import { Container, Stack, Button } from 'react-bootstrap'
 import BudgetCard from './components/BudgetCard'
 import AddBudgetModal from './components/AddBudgetModal'
 import AddExpenseModal from './components/AddExpenseModal'
+import UncategorizedBudgetCard from './components/UncategorizedBudgetCard'
 import { useBudgets } from './contexts/BudgetsContext'
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
             })
           }
           
+          <UncategorizedBudgetCard />
         </div>
       </Container>
 
